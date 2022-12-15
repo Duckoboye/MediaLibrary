@@ -6,8 +6,17 @@ namespace MediaLibrary
     {
         static void Main(string[] args)
         {
-            GenericMedia media = new Book("Of Mice and Men", 1937, "John Steinbeck", "123-456-789");
-            Console.WriteLine((media.Info()));
+            Dictionary<string, string> leadingRoles = new Dictionary<string, string>();
+            leadingRoles.Add("William afton", "Pink guy");
+            leadingRoles.Add("John johnson", "Steve");
+            leadingRoles.Add("Christian bale", "Patrick Bateman");
+            leadingRoles.Add("Jeffrey Pezos", "Bengt Perrson");
+            Movie movie = new Movie("Titel", 1984, "me", "1080p", new Dictionary<string, string>());
+            
+            //GenericMedia media = new Book("Of Mice and Men", 1937, "John Steinbeck", "123-456-789");
+
+            Console.WriteLine(movie.Info());
+            
         }
-    }
+    };
 }

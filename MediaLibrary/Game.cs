@@ -13,6 +13,6 @@ public class Game : GenericMedia
 
     public override string Info()
     {
-        return $"{Title} by {Author}, released {ReleaseYear}. ISBN: {_publisher}";
+        return $"{Title}, developed by {Author}, released {ReleaseYear}. Publisher: {_publisher}.";
     }
 }
